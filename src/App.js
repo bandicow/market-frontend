@@ -18,6 +18,7 @@ function App() {
                 <HaderPage />
             </div>
             <div id="body">
+                <h1>되냐!</h1>
                 <Switch>
                     <Route exact={true} path="/">
                         <MainPageComponent />
