@@ -1,5 +1,8 @@
-import { Routes, Route, Link, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Button } from "antd";
+
+
 import "antd/dist/antd.css";
 import "./App.css";
 import HaderPage from "./HaderPage";
@@ -15,7 +18,7 @@ function App() {
                 <HaderPage />
             </div>
             <div id="body">
-                <Routes>
+                <Switch>
                     <Route exact={true} path="/">
                         <MainPageComponent />
                     </Route>
@@ -25,7 +28,7 @@ function App() {
                     <Route exact={true} path="/upload">
                         <UploadPage />
                     </Route>
-                </Routes>
+                </Switch>
             </div>
             <div id="footer"></div>
         </div>
